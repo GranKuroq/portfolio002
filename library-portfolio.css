@@ -4,7 +4,7 @@
     --color-blue-gray: rgb(99, 141, 204);
     --color-blue-gray-dark: rgb(99, 141, 204, 0.4);
     --color-secundario: rgb(216, 215, 206);
-    --color-terciario: rgba(206, 187, 131, 0.589);
+    --color-terciario: rgb(150, 179, 113);
     --cuaternario: yellow;
     --hand-blue: rgb(13, 13, 104);
     
@@ -13,6 +13,7 @@
     --blue-gray: linear-gradient(to right, rgb(99, 141, 204), rgba(99, 141, 204, 0.900), rgb(99, 141, 204, 0.800), rgb(99, 141, 204, 0.700), rgb(99, 141, 204, 0.600), rgb(99, 141, 204, 0.5));
     --grad-second: linear-gradient(to right, rgb(216, 215, 206), rgb(221, 205, 170), rgba(206, 187, 131, 0.589));
     --grad-second-x: linear-gradient(to top, rgb(216, 215, 206), rgb(221, 205, 170), rgba(206, 187, 131, 0.589));
+    /* --grad-third: conic-gradient(rgb(150, 179, 113) 20deg, lightgreen 120deg); */
 
     
 
@@ -37,4 +38,14 @@
     100% {
         color: #001f3f;
     }
+}
+@keyframes glow-alert{
+    from {
+        transform: rotate(0deg);
+      }
+
+    to {
+        transform: rotate(3600deg);
+      }
+
 }

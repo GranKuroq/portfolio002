@@ -74,13 +74,13 @@ box-shadow: -1px -1px 6px rgb(54, 54, 54);
     width: 70%;
     height: 60%;
     h1{
-        font-size: 300%;
+        font-size: 3rem;
         text-decoration: underline;
         font-family: "Black Ops One", serif;
         font-weight: 500;
     }
     h2{
-        font-size: 200%;
+        font-size: 2rem;
         font-family: "Oooh Baby", cursive;
         font-weight: 900;
         /* padding-left: 10%; */
@@ -131,8 +131,8 @@ box-shadow: -1px -1px 6px rgb(54, 54, 54);
         position: relative;
 
         #photo-clip img{
-            width: 30%;
-            height: auto;
+            width: auto;
+            height: 25%;
             z-index: 44;
             position: absolute;
             top: -6%;
@@ -141,8 +141,8 @@ box-shadow: -1px -1px 6px rgb(54, 54, 54);
             
         }
         #img1 img{
-            width: 80%;
-            height: auto;
+            width: auto;
+            height: 80%;
             z-index: 43;
             position: absolute;
             top: 3%;
@@ -151,8 +151,8 @@ box-shadow: -1px -1px 6px rgb(54, 54, 54);
             transform: rotateZ(2deg);
         }
         #img2 img{
-            width: 80%;
-            height: auto;
+            width: auto;
+            height: 80%;
             z-index: 42;
             position: absolute;
             top: 3%;
@@ -162,8 +162,8 @@ box-shadow: -1px -1px 6px rgb(54, 54, 54);
             cursor: pointer;
         }        
         #img3 img{
-            width: 80%;
-            height: auto;
+            width: auto;
+            height: 80%;
             z-index: 41;
             position: absolute;
             top:8%;
@@ -202,12 +202,12 @@ box-shadow: -1px -1px 6px rgb(54, 54, 54);
     }
     .subtitle{
         font-family: "Black Ops One", serif;
-        font-size: 75%;
+        font-size: 0.8rem;
         text-decoration: underline;
     }
     .seconddata{
         font-family: "Oooh Baby", serif;
-        font-size: 90%;
+        font-size: 0.9rem;
         font-weight: 900;
         color: var(--hand-blue);
         .great-club{
@@ -216,6 +216,31 @@ box-shadow: -1px -1px 6px rgb(54, 54, 54);
     }
 
 }
+
+#nav-apts-tab{
+    background-color: var(--color-terciario);
+    color: black;
+    border-bottom: 0 solid transparent;
+}
+
+#nav-apts{
+
+    background-color: var(--color-terciario);
+    display: grid;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 4%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 3% 1% 1% 4%;
+    overflow: hidden;
+}
+
+
 main{
     width: 90%;
     /* padding-inline: 15px; */
