@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 50%;
+    font-family: 'rubik 80s fade', serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: aquamarine; */
+    width: 90%;
+    margin: auto;
+    font-size: 60%;
+
+    .nav-tabs{
+        border-bottom: 1px solid transparent;
+    }
+    .nav-link{
+        padding: 5px;
+        
+        
+    }
+}
+#nav-home-tab{
+    background-color: var(--color-blue-gray);
+    color: white;
+    border-bottom: 0 solid transparent;
+    
+}
+#nav-home{
+display: flex;
+justify-content: center;
+/* background-color: blueviolet; */
+width: 98%;
+height: 100%;
+/* margin: auto; */
+/* margin-top: 0; */
+align-items: start;
+position: absolute;
+bottom:0;
+left: 2%;
+border-radius: 15px;
+border: 2px solid var(--color-blue-gray-dark);
+box-shadow: -1px -1px 6px rgb(54, 54, 54);
+
+.portada{
+    /* margin: auto; */
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10%;    
+    width: 70%;
+    height: 60%;
+    h1{
+        font-size: 300%;
+        text-decoration: underline;
+        font-family: "Black Ops One", serif;
+        font-weight: 500;
+    }
+    h2{
+        font-size: 200%;
+        font-family: "Oooh Baby", cursive;
+        font-weight: 900;
+        /* padding-left: 10%; */
+        color: var(--hand-blue);
+        transform: rotateZ(-3deg);
+    }
+}
+}
+
+#nav-profile-tab{
+    background-color: var(--color-secundario);
+    color: black;
+    border-bottom: 0 solid transparent;
+}
+
+#nav-profile{
+
+    background: var(--grad-second);
+    display: grid;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 4%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 3% 1% 1% 4%;
+    overflow: hidden;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "a a a a b b"
+    "a a a a c c"
+    "a a a a d d"
+    "a a a a e e"
+    "f f f f f f"
+    "f f f f f f";
+    /* gap: 1px; */
+    .photo{
+        grid-area: a;
+        border: 3px double black;
+        width: 90%;
+        height: 90%;
+        border-radius: 15px;
+        background: var(--grad-second-x);
+        position: relative;
+
+        #photo-clip img{
+            width: 30%;
+            height: auto;
+            z-index: 44;
+            position: absolute;
+            top: -6%;
+            left: 45%;
+            
+            
+        }
+        #img1 img{
+            width: 80%;
+            height: auto;
+            z-index: 43;
+            position: absolute;
+            top: 3%;
+            left: 6%;
+            border-radius: 20px;
+            transform: rotateZ(2deg);
+        }
+        #img2 img{
+            width: 80%;
+            height: auto;
+            z-index: 42;
+            position: absolute;
+            top: 3%;
+            left: 14%;
+            border-radius: 20px;
+            transform: rotateZ(-2deg);
+            cursor: pointer;
+        }        
+        #img3 img{
+            width: 80%;
+            height: auto;
+            z-index: 41;
+            position: absolute;
+            top:8%;
+            left:6%;
+            border-radius: 20px;
+            transform: rotateZ(6deg);
+            cursor: pointer;
+        }
+        #img2 img:hover{
+            border: 2px solid rgba(255, 234, 47, 0.541);
+        }
+        #img2 img:active{
+            z-index: 45;
+        }
+        #img3 img:hover{
+            border: 2px solid rgba(255, 234, 47, 0.541);
+        }
+        #img3 img:active{
+            z-index: 46;
+        }
+    }
+    .fullname{
+        grid-area: b;
+    }
+    .ocupation{
+        grid-area: c;
+    }
+    .age{
+        grid-area: d;
+    }
+    .residence{
+        grid-area: e;
+    }
+    .description{
+        grid-area: f;
+    }
+    .subtitle{
+        font-family: "Black Ops One", serif;
+        font-size: 75%;
+        text-decoration: underline;
+    }
+    .seconddata{
+        font-family: "Oooh Baby", serif;
+        font-size: 90%;
+        font-weight: 900;
+        color: var(--hand-blue);
+        .great-club{
+            animation: glow-blue 4s infinite;
+        }
+    }
+
+}
+main{
+    width: 90%;
+    /* padding-inline: 15px; */
+    background: var(--blue-gray);
+    margin: auto;
+    height: 75%;
+    border-radius: 15px;
+    /* padding: 15px; */
+    position: relative;
+}
+footer{
+
+    width: 100%;
+    height: 10%;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 60%;
+    
+
+}

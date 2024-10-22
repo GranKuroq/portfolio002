@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- C S S -->
+    <link rel="stylesheet" href="portfolio002.css">
+    <!-- S C R I P T -->
+
+    <!-- OWN LIBRARY -->
+     <link rel="stylesheet" href="library-portfolio.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Radley:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Portfolio</h1>
+    </header>
+    <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Portada</button>
+              
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Datos Personales</button>
+              
+              <button class="nav-link" id="nav-apts-tab" data-bs-toggle="tab" data-bs-target="#nav-apts" type="button" role="tab" aria-controls="nav-apts" aria-selected="false">Aptitudes</button>
+              
+              <button class="nav-link" id="nav-academic-tab" data-bs-toggle="tab" data-bs-target="#nav-academic" type="button" role="tab" aria-controls="nav-academic" aria-selected="false">Experiencia Académica</button>
+              
+              <button class="nav-link" id="nav-works-tab" data-bs-toggle="tab" data-bs-target="#nav-works" type="button" role="tab" aria-controls="nav-works" aria-selected="false">Experiencia Laboral</button>
+              
+              
+            </div>
+    </nav>
+    <main class="tab-content" id="nav-tabContent">
+            
+          
+            <section class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <div class="portada">
+                    <h1>Profile</h1>
+                    <h2>Facundo Rini</h2>
+                </div>
+            </section>
+
+            <section class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <div class="photo">
+                    <div id="photo-clip"><img src="assets/clip-pin.png" alt="clip"></div>
+                    <div id="img1"><img src="assets/IMG1.webp" alt="first pic"></div>
+                    <div id="img2"><img src="assets/IMG2.webp" alt="scd pic"></div>
+                    <div id="img3"><img src="assets/IMG3.webp" alt="trd pic"></div>
+                </div>
+                <div class="fullname">
+                    <h4 class="subtitle">Nombre completo:</h4>
+                    <p class="seconddata">Facundo Luis Rini.</p>
+
+                </div>
+                <div class="ocupation">
+                    <h4 class="subtitle">Ocupación:</h4>
+                    <p class="seconddata">Procurador.<br> Abogado.<br> Front End Developer Jr.</p>
+                </div>
+                <div class="age">
+                    <h4 class="subtitle">Edad:</h4>
+                    <p class="seconddata">42 años.</p>
+                </div>
+                <div class="residence">
+                    <h4 class="subtitle">Residencia:</h4>
+                    <p class="seconddata">Guaymallén.<br> Mendoza.<br> Argentina.</p>
+                </div>
+                <div class="description">
+                    <h4 class="subtitle">Otros datos:</h4>
+                    <p class="seconddata">Personalidad proactiva, de intereses variados, le atrae aprender. Maneja inglés con facilidad, algo de francés y ha comenzado a incursionar en el japonés. Apasionado por la historia y los debates. Disfruta de la compañía de la familia y sus animales. Hincha de <span class="great-club">Independiente Rivadavia</span>, la "Lepra" mendocina.</p>
+                </div>
+            </section>
+
+            <section class="tab-pane fade" id="nav-apts" role="tabpanel" aria-labelledby="nav-apts-tab" tabindex="0">...</section>
+
+            <section class="tab-pane fade" id="nav-academic" role="tabpanel" aria-labelledby="nav-academic-tab" tabindex="0">...</section>
+
+            <section class="tab-pane fade" id="nav-works" role="tabpanel" aria-labelledby="nav-works-tab" tabindex="0">...</section>
+
+            
+            
+          
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li>lugar</li>
+                <li>calle</li>
+                <li>distrito</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>horario</li>
+                <li>mañana</li>
+                <li>tarde</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>redes</li>
+                <li>facebook</li>
+                <li>instagram</li>
+        </ul>
+        </div>
+
+    </footer>
+
+</body>
+</html>

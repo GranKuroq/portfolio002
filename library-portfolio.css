@@ -1,0 +1,40 @@
+:root{
+
+    /* Colores */
+    --color-blue-gray: rgb(99, 141, 204);
+    --color-blue-gray-dark: rgb(99, 141, 204, 0.4);
+    --color-secundario: rgb(216, 215, 206);
+    --color-terciario: rgba(206, 187, 131, 0.589);
+    --cuaternario: yellow;
+    --hand-blue: rgb(13, 13, 104);
+    
+
+    /* Gradientes */
+    --blue-gray: linear-gradient(to right, rgb(99, 141, 204), rgba(99, 141, 204, 0.900), rgb(99, 141, 204, 0.800), rgb(99, 141, 204, 0.700), rgb(99, 141, 204, 0.600), rgb(99, 141, 204, 0.5));
+    --grad-second: linear-gradient(to right, rgb(216, 215, 206), rgb(221, 205, 170), rgba(206, 187, 131, 0.589));
+    --grad-second-x: linear-gradient(to top, rgb(216, 215, 206), rgb(221, 205, 170), rgba(206, 187, 131, 0.589));
+
+    
+
+}
+
+/* Animaciones */
+
+@keyframes glow-blue{
+
+    0% {
+        color: #001f3f;
+    }
+    25% {
+        color: #007bff;
+    }
+    50% {
+        color: #99cfff;
+    }
+    75% {
+        color: #007bff;
+    }
+    100% {
+        color: #001f3f;
+    }
+}
