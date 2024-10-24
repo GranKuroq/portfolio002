@@ -21,8 +21,21 @@ header {
     margin-bottom: 20px;
     font-size: 50%;
     font-family: 'rubik 80s fade', serif;
+    align-items: center;
+    /* background-color: aqua; */
 }
 
+#contact-bttn{
+    width: 15%;
+    cursor: pointer;
+    
+}
+#menu-large{
+    font-size: x-large;
+    background-color: transparent;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -202,14 +215,17 @@ box-shadow: -1px -1px 6px rgb(54, 54, 54);
     }
     .subtitle{
         font-family: "Black Ops One", serif;
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-decoration: underline;
+        text-overflow: ellipsis;
     }
     .seconddata{
         font-family: "Oooh Baby", serif;
         font-size: 0.9rem;
         font-weight: 900;
         color: var(--hand-blue);
+        /* overflow: hidden; */
+        text-overflow: ellipsis;
         .great-club{
             animation: glow-blue 4s infinite;
         }
@@ -226,19 +242,116 @@ box-shadow: -1px -1px 6px rgb(54, 54, 54);
 #nav-apts{
 
     background-color: var(--color-terciario);
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
+    /* overflow: hidden; */
     width: 90%;
     height: 90%;
     position: absolute;
     top: 0;
-    left: 4%;
+    left: 6%;    
+    border-radius: 15px;
+    padding-inline: 6px;    
+}
+article {
+    box-sizing: border-box;
+    /* margin-top: 5px; */
+}
+.jcas h4, .ots h4{
+    font-family: "Black Ops One", serif;
+    font-size: 1rem;
+    text-decoration: underline;
+    text-overflow: ellipsis;
+
+}
+.container1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 4px;
+    justify-content: center;
+    height: 40%;
+    
+    
+
+    details {
+        border: none;
+        padding: 0;
+        
+    }    
+    summary {
+        cursor: pointer;
+        outline: none;
+        background: linear-gradient(to bottom, #d1dac9, #97a093);
+        border: 1px solid #6f8a7a;
+        border-radius: 10px;
+        height: 45px;
+        font-size: 0.8rem;
+        transition: all 0.3s ease;
+        list-style: none;
+        text-align: center;
+        margin-block: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 2px 3px black;
+        
+    }    
+    summary:hover {
+        background: linear-gradient(to bottom, #d0d0d0, #909090);
+    }    
+    label {
+        display: block;
+        padding: 0;
+        margin-block: -10px;
+        font-size: 0.6rem;
+        text-align: center;
+        
+    }
+    label:hover{
+        color:rgb(3, 87, 28);
+        transform: scale(2);
+        background-color: rgba(240, 248, 255, 0.37);
+        overflow: visible;
+    }
+}
+.container2{
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    
+    
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border-radius: 15px;
-    padding: 3% 1% 1% 4%;
-    overflow: hidden;
+    border: 3px double rgb(3, 87, 28);
+    background-color: #e5ebe2;
+    height: 50px;
+    box-shadow: 1px 2px 4px rgb(0, 8, 2);
+
+    span{
+        font-size: x-small;
+    }
+
+    
 }
+.icon:active{
+    background-color: rgb(161, 250, 126);
+    box-shadow: 0 0 0;
+    transform: translateX(2px);
+    transform: translateY(1px);
+
+}
+
 
 
 main{

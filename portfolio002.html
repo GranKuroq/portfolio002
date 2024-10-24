@@ -9,8 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <!-- C S S -->
-    <link rel="stylesheet" href="portfolio002.css">
+    
     <!-- S C R I P T -->
 
     <!-- OWN LIBRARY -->
@@ -30,13 +29,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
     <!-- FONTAWSOME -->
     <script src="https://kit.fontawesome.com/6d812f8390.js" crossorigin="anonymous"></script>
+    <!-- C S S -->
+    <link rel="stylesheet" href="portfolio002.css">
 
 </head>
 
 <body>
     <header>
         <h1>Portfolio</h1>
+            <img src="assets/Contáctanos.png" alt="contacto" type="button" id="contact-bttn"data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+
+            <div class="alert alert-info d-none d-lg-block" id="menu-large">Resize your browser to show the responsive offcanvas toggle.</div>
+
+            <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p class="mb-0">This is content within an <code>.offcanvas-lg</code>.</p>
+                </div>
+            </div>
+        
     </header>
+    
     <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
               <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Portada</button>
@@ -92,7 +108,99 @@
                 </div>
             </section>
 
-            <section class="tab-pane fade" id="nav-apts" role="tabpanel" aria-labelledby="nav-apts-tab" tabindex="0">...</section>
+            <section class="tab-pane fade" id="nav-apts" role="tabpanel" aria-labelledby="nav-apts-tab" tabindex="0">
+                
+                <article class="jcas">
+                    <h4>Conocimientos Jurídicos</h4>
+                    <div class="container1">
+                        <details><summary>Derecho de Familia</summary> 
+                            <label for="ramas">Divorcio</label><br>
+                            <label for="ramas">Régimen de cuidadds Parentale</label><br>
+                            <label for="ramas">Alimentos</label><br>
+                            <label for="ramas">División de bienes</label><br>
+                            <label for="ramas">Unión convivencial</label>
+                        </details>
+                        <details><summary>Derecho de Sucesiones</summary> 
+                            <label for="ramas">Declaratoria herederos</label><br>
+                            <label for="ramas">Determinación de bienes</label><br>
+                            <label for="ramas">Adjudicación</label><br>
+                            <label for="ramas">Remates</label>
+                            
+                        </details>
+                        <details><summary>Derechos Reales</summary> 
+                            <label for="ramas">Reivindicación</label><br>
+                            <label for="ramas">Acciones posesorias</label><br>
+                            <label for="ramas">Consorcios</label><br>
+                            <label for="ramas">Estudios de título</label><br>
+                            <label for="ramas">Títulos supletorios</label>
+                        </details><details><summary>Contratos</summary> 
+                            <label for="ramas">Alquileres</label><br>
+                            <label for="ramas">Defensa del consumidor</label><br>
+                            <label for="ramas">Recisiones</label><br>
+                            <label for="ramas">Compraventas</label><br>
+                            <label for="ramas">Ejecución de documentos</label>
+                        </details>
+                        <details><summary>Responsabilidad Civil</summary> 
+                            <label for="ramas">Accidentes tránsito</label><br>
+                            <label for="ramas">Daños y Perjuicios</label><br>
+                            <label for="ramas">Seguros</label><br>
+                            <label for="ramas">Estafas bancarias</label>
+                            
+                        </details>
+                        <details><summary>Derecho Laboral</summary> 
+                            <label for="ramas">Despidos</label><br>
+                            <label for="ramas">Accidentes</label><br>
+                            <label for="ramas">Reclamos</label>
+                            
+                        </details>
+                        <details><summary>Derecho Administrativo</summary> 
+                            <label for="ramas">Recursos</label><br>
+                            <label for="ramas">Reclamos</label><br>
+                            <label for="ramas">Licitaciones públicas</label><br>
+                            <label for="ramas">Dirección de Persona Jurídica</label><br>
+                            <label for="ramas">Municipal</label>
+                        </details><details><summary>Derecho Previsional</summary> 
+                            <label for="ramas">Jubilaciones</label><br>
+                            <label for="ramas">Ajustes de beneficios</label><br>
+                            <label for="ramas">Discapacidad</label><br>
+                            
+                        </details>
+                        
+                    </div>
+                </article>
+                <article class="ots">
+                    <h4>Otros conocimientos</h4>
+                    <div class="container2">                        
+                        <div class="icon" title="Inglés avanzado"><i class="fa-solid fa-e" ></i><span>Inglés</span></div>
+                        <div class="icon" title="Francés intermedio"><i class="fa-solid fa-f" ></i><span>Francés</span></div>
+                        <div class="icon" title="Técnicas discursivas"><i class="fa-regular fa-comment-dots" ></i><span>Oratoria</span></div>
+                        <div class="icon" title="Sistema de Información Contable de la Contaduría General de la Provincia de Mendoza"><i class="fa-solid fa-calculator" ></i><span>SidICo</span></div>
+                        <div class="icon" title="SIDICO en plataforma Web"><i class="fa-solid fa-desktop" ></i><span>Sidico Web</span></div>
+                        <div class="icon" title="Microsft Word Avanzado"><i class="fa-solid fa-file-word" ></i><span>Word</span></div>
+                        <div class="icon" title="Ms Excel intermedio"><i class="fa-solid fa-file-excel" ></i><span>Excel</span></div>
+                        <div class="icon" title="Ms Power Point intermedio"><i class="fa-regular fa-file-powerpoint" ></i><span>PowerPoint</span></div>
+                        <div class="icon" title="Paint, tan avanzado que asusta"><i class="fa-solid fa-palette" ></i><span>Paint</span></div>
+                        <div class="icon" title="Mozilla Firefox básico"><i class="fa-solid fa-globe" ></i><span>Mozilla</span></div>
+                        <div class="icon" title="Google Chrome básico"><i class="fa-brands fa-google" ></i><span>Chrome</span></div>
+                        <div class="icon" title="HTML5 avanzado"><i class="fa-brands fa-html5" ></i><span>HTML</span></div>
+                        <div class="icon" title="CSS3 avanzado"><i class="fa-brands fa-css3-alt" ></i><span>CSS</span></div>
+                        <div class="icon" title="JavaScript de nombre nomás"><i class="fa-brands fa-js" ></i><span>JavaScript</span></div>
+                        <div class="icon" title="PseInt básico"><i class="fa-solid fa-diagram-next" ></i><span>PseInt</span></div>
+                        <div class="icon" title="Openai Chat GPT 4.o básico"><i class="fa-brands fa-hornbill" ></i><span>ChatGPT</span></div>
+                        <div class="icon" title="Perplexity básico"><i class="fa-brands fa-dart-lang" ></i><span>Perplexity</span></div>
+                        <div class="icon" title="Copilot básico"><i class="fa-brands fa-microsoft" ></i><span>Copilot</span></div>
+                        <div class="icon" title="Canva intermedio"><i class="fa-solid fa-object-group" ></i><span>Canva</span></div>
+                        <div class="icon" title="Virtual Studio Code básico"><i class="fa-solid fa-code" ></i><span>VSCode</span></div>
+                        
+                        
+                        
+                    </div>
+                </article>
+
+
+
+                
+            </section>
 
             <section class="tab-pane fade" id="nav-academic" role="tabpanel" aria-labelledby="nav-academic-tab" tabindex="0">...</section>
 

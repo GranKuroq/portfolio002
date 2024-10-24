@@ -4,7 +4,7 @@
     --color-blue-gray: rgb(99, 141, 204);
     --color-blue-gray-dark: rgb(99, 141, 204, 0.4);
     --color-secundario: rgb(216, 215, 206);
-    --color-terciario: rgb(150, 179, 113);
+    --color-terciario: rgb(195, 211, 174);
     --cuaternario: yellow;
     --hand-blue: rgb(13, 13, 104);
     
@@ -49,3 +49,6 @@
       }
 
 }
+
+/* svg */
+
