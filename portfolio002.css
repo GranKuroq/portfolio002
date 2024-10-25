@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    /* content-visibility: auto; */
     
 
 }
@@ -30,11 +31,7 @@ header {
     cursor: pointer;
     
 }
-@media (min-width: 980px) {
-    #contact-bttn {
-        display: none;
-    }
-}
+
 #menu-large{
     font-size: x-large;
     background-color: transparent;
@@ -383,4 +380,10 @@ footer{
     font-size: 60%;
     
 
+}
+/* sección responsive */
+@media (min-width: 980px) {
+    #contact-bttn {
+        display: none;
+    }
 }
