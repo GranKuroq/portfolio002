@@ -66,6 +66,10 @@ header {
     font-family: 'rubik 80s fade', serif;
     gap: 15px;
     color: #f4f4f4;
+    h5{
+        font-size: 1.2rem;
+        font-family: 'rubik 80s fade', serif;;
+    }
 }
 .btn-close{
     transform: scale(1.2);
@@ -377,8 +381,8 @@ position: relative;
             z-index: 5;
 }
 .contelogo4{
-            height: 550px;
-            width: 350px;
+            height: 300px;
+            width: 200px;
             background-color: #101010;
             
             display: flex;
@@ -723,7 +727,7 @@ footer {
     }
     .other-studies{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     .actual-jobs{
         display: flex;
