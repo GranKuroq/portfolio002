@@ -579,9 +579,28 @@ position: relative;
 footer {
     grid-area: footer;
     background-color: #333; 
-    color: white;
-    padding: 10px;
-    text-align: center;
+    padding-block: 20px;
+    padding-inline: 0;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-top: 100px;
+    box-shadow: 0 -5px 10px rgb(61, 61, 61);
+    border-radius: 5px 5px 0 0;
+    
+    .thefoo{
+        display: flex;
+        justify-content: start;
+        font-family: 'DynaPuff', serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        background: var(--grad-fith);
+        background-clip: text;
+        color: transparent;
+        width: 50%;
+        
+           
+    }
 }
 
 

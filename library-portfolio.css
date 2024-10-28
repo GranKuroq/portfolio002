@@ -20,7 +20,7 @@
     --grad-second-x: linear-gradient(to top, rgb(216, 215, 206), rgb(221, 205, 170), rgba(206, 187, 131, 0.589));
     --grad-third: linear-gradient(to right, rgb(209, 212, 193), rgb(209, 212, 193), rgba(209, 212, 193, 0.589));
     --grad-forth: linear-gradient(to right, rgb(224, 235, 234), rgb(224, 235, 234), rgba(224, 235, 234, 0.589));
-    --grad-fith: linear-gradient(to right, rgb(237, 230, 241), rgb(237, 230, 241), rgba(237, 230, 241, 0.589));
+    --grad-fith: linear-gradient(to right, red, yellow, blue);
     --grad-conic-red: conic-gradient(red 20deg, transparent 120deg);
     --grad-conic-blue: conic-gradient(blue 20deg, transparent 120deg);
     --grad-conic-green: conic-gradient(yellowgreen 20deg, transparent 120deg);
@@ -35,6 +35,8 @@
 cursiva{
     font-style: italic;
 }
+
+
 
 /* Animaciones */
 
