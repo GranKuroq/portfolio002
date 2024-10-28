@@ -1,22 +1,39 @@
 :root{
 
     /* Colores */
+    --color-black-bg: rgba(74,65,69,1);
     --color-blue-gray: rgb(99, 141, 204);
     --color-blue-gray-dark: rgb(99, 141, 204, 0.4);
     --color-secundario: rgb(216, 215, 206);
-    --color-terciario: rgb(195, 211, 174);
-    --cuaternario: yellow;
+    --color-terciario: rgb(209, 212, 193);
+    --color-cuaternario: rgb(224, 235, 234);
+    --color-quinario: rgb(237, 230, 241);
     --hand-blue: rgb(13, 13, 104);
     
 
     /* Gradientes */
-    --blue-gray: linear-gradient(to right, rgb(99, 141, 204), rgba(99, 141, 204, 0.900), rgb(99, 141, 204, 0.800), rgb(99, 141, 204, 0.700), rgb(99, 141, 204, 0.600), rgb(99, 141, 204, 0.5));
+    
+    --grad-black-bg: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(74,65,69,1) 25%, rgba(51,33,38,1) 50%, rgba(55,9,18,1) 75%, rgba(0,0,0,1) 100%);
+    --grad-blue-gray: linear-gradient(to right,rgba(2, 103, 255), rgba(99, 141, 204), rgb(157, 166, 180), rgba(2, 103, 255), rgb(157, 166, 180));
+    --grad-blue-white: linear-gradient(to right,rgb(227, 235, 246), rgba(157, 166, 180), rgb(2, 103, 255), rgba(157, 166, 180), rgb(227, 235, 246));
     --grad-second: linear-gradient(to right, rgb(216, 215, 206), rgb(221, 205, 170), rgba(206, 187, 131, 0.589));
     --grad-second-x: linear-gradient(to top, rgb(216, 215, 206), rgb(221, 205, 170), rgba(206, 187, 131, 0.589));
-    /* --grad-third: conic-gradient(rgb(150, 179, 113) 20deg, lightgreen 120deg); */
-
+    --grad-third: linear-gradient(to right, rgb(209, 212, 193), rgb(209, 212, 193), rgba(209, 212, 193, 0.589));
+    --grad-forth: linear-gradient(to right, rgb(224, 235, 234), rgb(224, 235, 234), rgba(224, 235, 234, 0.589));
+    --grad-fith: linear-gradient(to right, rgb(237, 230, 241), rgb(237, 230, 241), rgba(237, 230, 241, 0.589));
+    --grad-conic-red: conic-gradient(red 20deg, transparent 120deg);
+    --grad-conic-blue: conic-gradient(blue 20deg, transparent 120deg);
+    --grad-conic-green: conic-gradient(yellowgreen 20deg, transparent 120deg);
+    --grad-conic-purple: conic-gradient(purple 20deg, transparent 120deg);
+    --grad-conic-gold: conic-gradient(gold 20deg, transparent 120deg);
     
 
+}
+
+/* Estilos de texto */
+
+cursiva{
+    font-style: italic;
 }
 
 /* Animaciones */
@@ -48,6 +65,106 @@
         transform: rotate(3600deg);
       }
 
+}
+
+@keyframes sliding-gallery {
+    0% {
+        transform: translateX(0%); 
+    }
+    10% {
+        transform: translateX(-10%); 
+    }
+    20% {
+        transform: translateX(-20%); 
+    }
+    30% {
+        transform: translateX(-30%); 
+    }
+    40% {
+        transform: translateX(-40%); 
+    }
+    50% {
+        transform: translateX(-50%); 
+    }
+    60% {
+        transform: translateX(-60%);
+    }
+    70% {
+        transform: translateX(-70%);
+    }
+    80% {
+        transform: translateX(-80%);
+    }
+    90% {
+        transform: translateX(-90%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes twist{
+    0% {
+        transform: rotate(0deg); 
+    }
+    10% {
+        transform: rotate(36deg); 
+    }
+    20% {
+        transform: rotate(72deg); 
+    }
+    30% {
+        transform: rotate(108deg); 
+    }
+    40% {
+        transform: rotate(144deg); 
+    }
+    50% {
+        transform: rotate(180deg); 
+    }
+    60% {
+        transform: rotate(216deg);
+    }
+    70% {
+        transform: rotate(252deg);
+    }
+    80% {
+        transform: rotate(288deg);
+    }
+    90% {
+        transform: rotate(324deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+
+}
+@keyframes glow-red{
+
+    0% {
+        color: #ffffff;
+    }
+    25% {
+        color: #f398fd;
+    }
+    50% {
+        color: #f84848;
+    }
+    75% {
+        color: #f398fd;
+    }
+    100% {
+        color: #ffffff;
+    }
+}
+@keyframes conic-glow{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 /* svg */

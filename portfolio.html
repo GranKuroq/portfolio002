@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+    <!-- S C R I P T -->
+
+    <!-- OWN LIBRARY -->
+     <link rel="stylesheet" href="library-portfolio.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Radley:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- FONTAWSOME -->
+    <script src="https://kit.fontawesome.com/6d812f8390.js" crossorigin="anonymous"></script>
+    <!-- C S S -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header id="inicio">
+        <p class="header-title">Portfolio</p>        
+        <div class="header-lines">
+            <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Contáctanos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                        <a href="#"><i class="fa-solid fa-at"></i>Email</a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                        <a href="#"><i class="fa-solid fa-user-tie"></i>CV</a>
+                        <form class="contact-form" action="#" method="post">
+                            <!-- <label for="email">Correo Electrónico:</label> -->
+                            <input type="email" id="email" name="email" required placeholder="Tu e-mail">                
+                            <!-- <label for="telefono">Número de Teléfono:</label> -->
+                            <input type="tel" id="telefono" name="telefono" required placeholder="Tu Teléfono">                
+                            <!-- <label for="mensaje">Mensaje:</label> -->
+                            <textarea id="mensaje" name="mensaje" rows="4" cols="20" required placeholder="Escribe tu nombre y mensaje aquí. Nos comunicaremos a la brevedad"></textarea>                
+                            <input type="submit" value="Enviar">
+                        </form>
+                </div>                
+            </div>
+            <img src="assets/Contáctanos.png" alt="contacto" type="button" id="contact-bttn"data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+        </div>
+    </header>
+    <aside>
+        <div class="navigator">
+            <button class="index-button" onclick="location.href='#profile'">Datos personales</button>
+            <button class="index-button" onclick="location.href='#academic'">Estudios académicos</button>
+            <button class="index-button" onclick="location.href='#apts'">Conocimientos</button>
+            <button class="index-button" onclick="location.href='#works'">Experiencia laboral</button>
+            <button class="index-button" onclick="location.href='#inicio'">Inicio</button>
+        </div>
+
+
+    </aside>
+    <main>
+        <section >
+            <div class="portada">
+                <h1>Profile</h1>
+                <h2>Facundo Rini</h2>
+                <p>Abogado<br>Full Stack Developer<br><span class="note">-: </span>Soluciones jurídicas y digitales<span class="note"> :-</span></p>
+            </div>
+        </section>
+        <section id="profile">
+            <h3>Datos personales</h3>
+            <article class="personal-data">
+                <div class="photo">
+                    
+                    <img id="img2" src="assets/IMG2.webp" alt="scd pic">
+                    
+                </div>
+                
+                    <div class="fullname">
+                        <h4 class="subtitle">Nombre completo:</h4>
+                        <p class="second-data">Facundo Luis Rini.</p>
+
+                    </div>
+                    <div class="ocupation">
+                        <h4 class="subtitle">Ocupación:</h4>
+                        <p class="second-data">Procurador.<br> Abogado.<br> Front End Developer Jr.</p>
+                    </div>
+                    <div class="age">
+                        <h4 class="subtitle">Edad:</h4>
+                        <p class="second-data">42 años.</p>
+                    </div>
+                    <div class="residence">
+                        <h4 class="subtitle">Residencia:</h4>
+                        <p class="second-data">Guaymallén.<br> Mendoza.<br> Argentina.</p>
+                    </div>
+                    <div class="description">
+                        <h4 class="subtitle">Otros datos:</h4>
+                        <p class="second-data">Personalidad proactiva, de intereses variados, le atrae aprender. Maneja inglés con facilidad, algo de francés y ha comenzado a incursionar en el japonés. Apasionado por la historia y los debates. Disfruta de la compañía de la familia y sus animales. Hincha de <span class="great-club">Independiente Rivadavia</span>, la "Lepra" mendocina.</p>
+                    </div>
+                
+            </article>
+
+
+        </section>
+        
+        <section id="academic">
+            <h3>Datos académicos</h3>
+            <h4>Títulos de grado</h4>
+            <article class="degree">
+                <div class="contelogo">
+                    <img class="logo" src="assets/ues21.webp" alt="ues21">
+                </div>
+                <div class="detail-box">
+                    <div class="detail">
+                        <h5>Abogado</h5>
+                        <p>Asesoramiento de sus clientes sobre cuestiones legales, representación de sus intereses en juicios y negociaciones extrajudiciales. Elaboración de documentos jurídicos permanentemente actualizados con la legislación vigente.</p>
+                    </div>
+                    <div class="detail">
+                        <h5>Procurador</h5>
+                        <p>Representante legal del abogado en procedimientos judiciales y administrativos. Su función principal es realizar gestiones y trámites legales, como presentar documentos en los tribunales, notificar resoluciones y asistir a audiencias. Su labor también incluye el seguimiento de casos y la comunicación con los clientes sobre el avance de los mismos.</p>
+                    </div>
+                </div>
+            </article>
+            <h4>Otros estudios</h4>
+            <article class="other-studies"> 
+                    <div class="sec-studies">
+                        <div class="contelogo2">                            
+                            <img class="logo2" src="assets/icelsius.webp" alt="Instituto Celsius">
+                        </div>
+                        <div class="detail-box2">
+                            
+                                <h5>Instituto Cesius</h5>
+                                <p>Iniciación a la programación, 40hs</p>
+                            
+                        </div>
+                    </div>
+                    <div class="sec-studies">
+                        <div class="contelogo3">                            
+                            <img class="logo3" src="assets/icm.webp" alt="Instituto Cultural Mendoza">
+                        </div>
+                        <div class="detail-box2">
+                            
+                                <h5>Instituto Cultural Mendoza</h5>
+                                <p>Aprendizaje de Inglés, programa de 6 años (1200hs)</p>
+                            
+                        </div>
+                    </div>
+                    <div class="sec-studies">
+                        <div class="contelogo4">                            
+                            <img class="logo4" src="assets/sade.webp" alt="Sociedad Argentina de Escritores">
+                        </div>
+                        <div class="detail-box2">
+                            
+                                <h5>Sociedad Argentina de Escritores</h5>
+                                <p>Curso de Redacción y Narrativa</p>
+                            
+                        </div>
+                    </div>
+
+            </article>
+
+
+        </section>
+        <section id="apts">
+            <h3>Competencias y conocimientos</h3>
+            <article class="jcas">
+                <h4>Competencias Jurídicas</h4>
+                <div class="law-known">
+                    <div class="law-carrusell-content">
+                        <div class="law-carrusell-item">Divorcio</div>
+                        <div class="law-carrusell-item">Régimen de cuidados parentales</div>
+                        <div class="law-carrusell-item">Alimentos</div>
+                        <div class="law-carrusell-item">División de bienes</div>
+                        <div class="law-carrusell-item">Unión convivencial</div>                    
+                        <div class="law-carrusell-item">Declaratoria herederos</div>
+                        <div class="law-carrusell-item">Determinación de bienes</div>
+                        <div class="law-carrusell-item">Adjudicación</div>
+                        <div class="law-carrusell-item">Remates</div>                    
+                        <div class="law-carrusell-item">Reivindicación</div>
+                        <div class="law-carrusell-item">Acciones posesorias</div>
+                        <div class="law-carrusell-item">Consorcios</div>
+                        <div class="law-carrusell-item">Estudios de título</div>
+                        <div class="law-carrusell-item">Títulos supletorios</div>                    
+                        <div class="law-carrusell-item">Alquileres</div>
+                        <div class="law-carrusell-item">Defensa del consumidor</div>
+                        <div class="law-carrusell-item">Recisiones</div>
+                        <div class="law-carrusell-item">Compraventas</div>
+                        <div class="law-carrusell-item">Ejecución de documentos</div>                   
+                        <div class="law-carrusell-item">Accidentes tránsito</div>
+                        <div class="law-carrusell-item">Daños y Perjuicios</div>
+                        <div class="law-carrusell-item">Seguros</div>
+                        <div class="law-carrusell-item">Estafas bancarias</div>
+                        <div class="law-carrusell-item">Despidos</div>
+                        <div class="law-carrusell-item">Accidentes</div>
+                        <div class="law-carrusell-item">Reclamos</div>
+                        <div class="law-carrusell-item">Recursos</div>
+                        <div class="law-carrusell-item">Reclamos</div>
+                        <div class="law-carrusell-item">Licitaciones públicas</div>
+                        <div class="law-carrusell-item">Dirección de Persona Jurídica</div>
+                        <div class="law-carrusell-item">Municipal</div>
+                        <div class="law-carrusell-item">Jubilaciones</div>
+                        <div class="law-carrusell-item">Ajustes de beneficios</div>
+                        <div class="law-carrusell-item">Discapacidad</div>                  
+                    </div>
+                    <div class="law-carrusell-content">
+                        <div class="law-carrusell-item">Divorcio</div>
+                        <div class="law-carrusell-item">Régimen de cuidados parentales</div>
+                        <div class="law-carrusell-item">Alimentos</div>
+                        <div class="law-carrusell-item">División de bienes</div>
+                        <div class="law-carrusell-item">Unión convivencial</div>                    
+                        <div class="law-carrusell-item">Declaratoria herederos</div>
+                        <div class="law-carrusell-item">Determinación de bienes</div>
+                        <div class="law-carrusell-item">Adjudicación</div>
+                        <div class="law-carrusell-item">Remates</div>                    
+                        <div class="law-carrusell-item">Reivindicación</div>
+                        <div class="law-carrusell-item">Acciones posesorias</div>
+                        <div class="law-carrusell-item">Consorcios</div>
+                        <div class="law-carrusell-item">Estudios de título</div>
+                        <div class="law-carrusell-item">Títulos supletorios</div>                    
+                        <div class="law-carrusell-item">Alquileres</div>
+                        <div class="law-carrusell-item">Defensa del consumidor</div>
+                        <div class="law-carrusell-item">Recisiones</div>
+                        <div class="law-carrusell-item">Compraventas</div>
+                        <div class="law-carrusell-item">Ejecución de documentos</div>                   
+                        <div class="law-carrusell-item">Accidentes tránsito</div>
+                        <div class="law-carrusell-item">Daños y Perjuicios</div>
+                        <div class="law-carrusell-item">Seguros</div>
+                        <div class="law-carrusell-item">Estafas bancarias</div>
+                        <div class="law-carrusell-item">Despidos</div>
+                        <div class="law-carrusell-item">Accidentes</div>
+                        <div class="law-carrusell-item">Reclamos</div>
+                        <div class="law-carrusell-item">Recursos</div>
+                        <div class="law-carrusell-item">Reclamos</div>
+                        <div class="law-carrusell-item">Licitaciones públicas</div>
+                        <div class="law-carrusell-item">Dirección de Persona Jurídica</div>
+                        <div class="law-carrusell-item">Municipal</div>
+                        <div class="law-carrusell-item">Jubilaciones</div>
+                        <div class="law-carrusell-item">Ajustes de beneficios</div>
+                        <div class="law-carrusell-item">Discapacidad</div>                  
+                    </div>
+                </div>
+            </article>
+            <article class="ots">
+                <h4>Otros conocimientos</h4>
+                <div class="container2">
+                    <div class="blako">
+                      <span class="explicao">Avanzado</span>
+                      <div class="icon"><i class="fa-solid fa-e" ></i><span>Inglés</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Intermedio</span>
+                      <div class="icon"><i class="fa-solid fa-f" ></i><span>Francés</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Técnicas discursivas</span>
+                      <div class="icon"><i class="fa-regular fa-comment-dots" ></i><span>Oratoria</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Sistema Contable, CGP Mendoza</span>
+                      <div class="icon"><i class="fa-solid fa-calculator" ></i><span>SidICo</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">SIDICO en plataforma Web</span>
+                      <div class="icon"><i class="fa-solid fa-desktop" ></i><span>Sidico Web</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Avanzado</span>
+                      <div class="icon"><i class="fa-solid fa-file-word" ></i><span>Word</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Intermedio</span>      
+                      <div class="icon"><i class="fa-solid fa-file-excel" ></i><span>Excel</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Intermedio</span>
+                      <div class="icon"><i class="fa-regular fa-file-powerpoint" ></i><span>PowerPoint</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Tan avanzado que asusta</span>
+                      <div class="icon"><i class="fa-solid fa-palette" ></i><span>Paint</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Mozilla Firefox básico</span>
+                      <div class="icon"><i class="fa-solid fa-globe" ></i><span>Mozilla</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Google Chrome básico</span>
+                      <div class="icon"><i class="fa-brands fa-google" ></i><span>Chrome</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Avanzado</span>
+                      <div class="icon"><i class="fa-brands fa-html5" ></i><span>HTML</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Avanzado</span>
+                      <div class="icon"><i class="fa-brands fa-css3-alt" ></i><span>CSS</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">de nombre nomás</span>
+                      <div class="icon"><i class="fa-brands fa-js" ></i><span>JavaScript</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Básico</span>
+                      <div class="icon"><i class="fa-solid fa-diagram-next" ></i><span>PseInt</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Básico</span>
+                      <div class="icon"><i class="fa-brands fa-hornbill" ></i><span>ChatGPT</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Básico</span>
+                      <div class="icon"><i class="fa-brands fa-dart-lang" ></i><span>Perplexity</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Básico</span>
+                      <div class="icon"><i class="fa-brands fa-microsoft" ></i><span>Copilot</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Intermedio</span>
+                      <div class="icon"><i class="fa-solid fa-object-group" ></i><span>Canva</span></div>
+                    </div>
+                    <div class="blako">
+                      <span class="explicao">Básico</span>
+                      <div class="icon"><i class="fa-solid fa-code" ></i><span>VSCode</span></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="works">
+            <h3>Experiencia laboral</h3>
+            <h4>Trabajando actualmente:</h4>
+            <article class="actual-jobs">
+                <div class="govt">
+                    <div class="contelogo5">                        
+                        <img class="logo5" src="assets/escudoconfondo.webp" alt="Ministerio de Producción">
+                    </div>
+                    <div class="detail-box2">
+                        <h5>Asesor Letrado</h5>
+                        <p>Dirección de Asuntos Jurídicos<br>Ministerio de Producción<br>Gobierno de Mendoza</p>
+                        
+                    </div>
+                </div>
+                <div class="rsa">
+                    <div class="contelogo6">                        
+                        <img class="logo6" src="assets/R S A.gif" alt="RSA Soluciones Jurídicas">
+                    </div>
+                    <div class="detail-box2">                        
+                        <h5>Abogado Asociado</h5>
+                        <p>R S A<br>. Soluciones Jurídicas .<br>Rini Sagredo Andrade</p>
+                    </div>
+                </div>
+            </article>
+            <h4>Anteriores trabajos:</h4>
+            <article class="other-jobs">
+                <div class="jobs-carrusell">
+                    <div class="carrusell-content">
+                        <div class="carrusell-item">Administrativo técnico en la Dirección de Estadísticas e Investigaciones Económicas. 2010 - 2018 .</div>
+                        <div class="carrusell-item">Coordinador del ïndice de Precios al Consumidor. 2016 .</div>
+                        <div class="carrusell-item">Procurador en Estudio Jurídico Petri. 2016 - 2020 .</div>
+                        <div class="carrusell-item">Oficial de Justicia y Receptor <cursiva>Ad-Hoc</cursiva> en Estudio Jurídico y Recaudación FPSS. 2006 - 2011 .</div>
+                        <div class="carrusell-item">Gestor Judicial en diversos estudios jurídicos. 2004 - 2006 .</div>
+                        <div class="carrusell-item">Auxiliar jurídico y administrativo en diversos estudios Jurídicos. 2001 - 2006 .</div>
+                    </div> 
+                    <div class="carrusell-content">
+                        <div class="carrusell-item">Administrativo técnico en la Dirección de Estadísticas e Investigaciones Económicas. 2010 - 2018 .</div>
+                        <div class="carrusell-item">Coordinador del ïndice de Precios al Consumidor. 2016 .</div>
+                        <div class="carrusell-item">Procurador en Estudio Jurídico Petri. 2016 - 2020 .</div>
+                        <div class="carrusell-item">Oficial de Justicia y Receptor <cursiva>Ad-Hoc</cursiva> en Estudio Jurídico y Recaudación FPSS. 2006 - 2011 .</div>
+                        <div class="carrusell-item">Gestor Judicial en diversos estudios jurídicos. 2004 - 2006 .</div>
+                        <div class="carrusell-item">Auxiliar jurídico y administrativo en diversos estudios Jurídicos. 2001 - 2006 .</div>
+                    </div>    
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer><div>. FacuRini design .</div></footer>
+
+</body>
+</html>

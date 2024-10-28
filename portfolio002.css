@@ -23,7 +23,7 @@ header {
     font-size: 50%;
     font-family: 'rubik 80s fade', serif;
     align-items: center;
-    /* background-color: aqua; */
+    
 }
 
 #contact-bttn{
@@ -136,6 +136,7 @@ box-shadow: -1px -1px 6px rgb(54, 54, 54);
     "f f f f f f"
     "f f f f f f";
     /* gap: 1px; */
+    box-shadow: 2px 3px 4px 4px black;
     .photo{
         grid-area: a;
         border: 3px double black;
@@ -200,21 +201,11 @@ box-shadow: -1px -1px 6px rgb(54, 54, 54);
             z-index: 46;
         }
     }
-    .fullname{
-        grid-area: b;
-    }
-    .ocupation{
-        grid-area: c;
-    }
-    .age{
-        grid-area: d;
-    }
-    .residence{
-        grid-area: e;
-    }
-    .description{
-        grid-area: f;
-    }
+    .fullname{grid-area: b;}
+    .ocupation{grid-area: c;}
+    .age{grid-area: d;}
+    .residence{grid-area: e;}
+    .description{grid-area: f;}
     .subtitle{
         font-family: "Black Ops One", serif;
         font-size: 1rem;
@@ -243,29 +234,34 @@ box-shadow: -1px -1px 6px rgb(54, 54, 54);
 
 #nav-apts{
 
-    background-color: var(--color-terciario);
+    background: var(--grad-third);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    /* overflow: hidden; */
+    box-shadow: 2px 3px 3px 4px black;
     width: 90%;
     height: 90%;
     position: absolute;
     top: 0;
     left: 6%;    
     border-radius: 15px;
-    padding-inline: 6px;    
+    padding-inline: 6px;
+       
 }
 article {
     box-sizing: border-box;
     /* margin-top: 5px; */
 }
-.jcas h4, .ots h4{
-    font-family: "Black Ops One", serif;
-    font-size: 1rem;
-    text-decoration: underline;
+.jcas, .ots {
+    
+    font-size: 1rem;    
     text-overflow: ellipsis;
+    h4{
+        text-decoration: underline;
+        font-size: 1rem;
+        font-family: "Black Ops One", serif;
+
+    }
 
 }
 .container1{
@@ -274,7 +270,8 @@ article {
     grid-template-rows: 1fr 1fr;
     gap: 4px;
     justify-content: center;
-    height: 40%;
+    
+    
     
     
 
@@ -320,40 +317,110 @@ article {
     }
 }
 .container2{
-    height: 60%;
+    
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 5px;
     
     
+    
 }
 
-.icon {
+.blako{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 15px;
-    border: 3px double rgb(3, 87, 28);
-    background-color: #e5ebe2;
+    border: 3px double rgb(2, 39, 13);
+    background-color: #0e2502;
     height: 50px;
     box-shadow: 1px 2px 4px rgb(0, 8, 2);
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;       
+    text-overflow: ellipsis;
 
-    span{
-        font-size: x-small;
+    .explicao{
+        font-size: 2vw;
+        color: #e5ebe2;
     }
+}
+
+.icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;    
+    background-color: #e5ebe2;
+    height: 100%;
+    width: 100%;
+    box-shadow: 1px 2px 4px rgb(0, 8, 2);
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+
+    span{font-size: x-small;}
 
     
 }
-.icon:active{
-    background-color: rgb(161, 250, 126);
-    box-shadow: 0 0 0;
-    transform: translateX(2px);
-    transform: translateY(1px);
+.icon:active{ opacity: 0.2;}
 
+#nav-academic-tab{
+    background-color: var(--color-cuaternario);
+    color: black;
+    border-bottom: 0 solid transparent;
+} 
+
+#nav-academic{
+
+    background: var(--grad-forth);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 8%;    
+    border-radius: 15px;
+    padding-inline: 6px;
+    box-shadow: 2px 3px 3px 4px black;
 }
 
+.contelogo, .contelogo2{
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    background-attachment: fixed;
+    img {
+        width: 100%;
+    }
+}
+#nav-works-tab{
+    background-color: var(--color-quinario);
+    color: black;
+    border-bottom: 0 solid transparent;
+}
+
+#nav-works {
+
+    background: var(--grad-fith);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 3%;    
+    border-radius: 15px;
+    padding-inline: 6px;
+    box-shadow: 2px 3px 3px 4px black;    
+}
 
 
 main{
