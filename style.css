@@ -102,6 +102,9 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.8rem;
 }
+input{
+    border-radius: 10px;
+}
 
 
 aside {
@@ -584,7 +587,7 @@ footer {
     display: flex;
     justify-content: end;
     align-items: end;
-    margin-top: 100px;
+    margin-top: 50px;
     box-shadow: 0 -5px 10px rgb(61, 61, 61);
     border-radius: 5px 5px 0 0;
     
@@ -593,7 +596,7 @@ footer {
         justify-content: start;
         font-family: 'DynaPuff', serif;
         font-weight: 400;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         background: var(--grad-fith);
         background-clip: text;
         color: transparent;
